@@ -26,8 +26,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("📰 Noticias Crypto/Web3", callback_data="news")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await update.message.reply_text("👋 Bienvenido a *Seguridad en la Web3 al Día*.
-Elige una opción:", reply_markup=reply_markup, parse_mode="Markdown")
+    await update.message.reply_text("""👋 Bienvenido a *Seguridad en la Web3 al Día*.
+Elige una opción:""", reply_markup=reply_markup, parse_mode="Markdown")
 
 # Función para mostrar noticias
 async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
